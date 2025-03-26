@@ -36,7 +36,7 @@ export default function NewPost() {
     }
     setLoading(true);
     try {
-      await createPost({ title, body, author: "User" }).unwrap();
+      await createPost({ title, body, author }).unwrap();
       setOpen(true);
       setTitle("");
       setAuthor("");
